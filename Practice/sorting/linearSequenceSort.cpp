@@ -22,14 +22,11 @@ int main(){
 
     for(int i=0; i<n; i++){
         if(arr[i] == key){
-            cout << "Element found in " << i << "  index";
+            cout << "Element found at index " << i;
             return 0;
-        }
-        if(i == n-1){
-            cout << "Element Not Found";
         }
     }
 
+    cout << "Element Not Found";
     return 0;
 }
-
