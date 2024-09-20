@@ -5,10 +5,11 @@ class Fraction {
     public:
     int num;
     int dem;
-    Fraction(  int num , int dem){
+    Fraction(int num , int dem){
         this->num = num;
         this->dem = dem;
     }
+    
     void show(){
         cout << this->num << " / " << this->dem << endl;;  
     }
