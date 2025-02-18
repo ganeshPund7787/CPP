@@ -2,21 +2,25 @@
 using namespace std;
 
 class single {
-public:
-    void add(int a, int b) {
-        cout << a + b ;
-    }
+    private:
+    int age = 20;
+    public: 
+  void Display(){
+    cout << age << endl;
+  }
 };
 
-class two : public single {
+// the visibility mode is private here but steel we can access Display()
+
+class two : private single {
     public: 
-        void callFunction(){
-            add(10, 20);
-        }
+      void Show(){
+        Display();
+      }
 };
 
 int main() {
     two obj;
-    obj.callFunction();
+    obj.Show();
     return 0;
 }
