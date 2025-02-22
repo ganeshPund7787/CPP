@@ -4,7 +4,7 @@
     class one {
     public:
         string name = "Ganesh";
-       virtual void Display(){
+        void Display(){
             cout << "My name is " << name << endl;
         }
     };
