@@ -65,3 +65,52 @@ int main() {
     cout << (sum == original ? "This is an Armstrong number" : "This is not an Armstrong number");
     return 0;
 }
+
+
+// #include<iostream>
+// #include<cmath>
+// using namespace std;
+
+// int main() {
+//     int n, i=1, sum = 0, original, count = 0, number_of_digit_count, j=1,k;
+//     cout << "How many armstrong number you want: ";
+//     cin >> n;
+
+//     if (n <= 0 || cin.fail()) {
+//         cout << "Invalid input";
+//         return 0;
+//     }
+
+//     while(count != n){
+//         number_of_digit_count = 0;
+//         sum = 0;
+//         j = i;
+//         k = i;
+        
+//         while(j != 0){
+//             j /= 10;
+//             number_of_digit_count++;
+//         }
+        
+//         while(k != 0) {
+//             int digit = k % 10;
+//             int power = 1;
+
+//             for(int p = 0; p < number_of_digit_count; p++)
+//                 power *= digit;
+
+//             sum += power;
+
+//             k /= 10;
+//         }
+         
+//             if(sum == i){
+//                 cout << i << endl;
+//                 count++;
+//             }
+//         // cout << i++ << endl;
+//         i++;
+//     }
+
+//     return 0;
+// }
