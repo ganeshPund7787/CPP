@@ -1,25 +1,38 @@
 #include<iostream>
 
-#include<cmath>
-#include<ctime>
-
 using namespace std;
 
-int main(){
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
+class Truck {
+    public:
+        void sound(int time,string type){
+            cout << time << " , ";
+            cout << type;
+        }
+        void sound(string name){
+            cout << name;
+        }
+};
 
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            if(n/2==j || n/2 == i){
-                cout << " *";
-            } else {
-                cout << "  ";
-            }
-        }   
-        cout << endl;
-    }
+class highway: public Truck {
+    public:
+        void sound(int time,string type){
+            cout << "Highway : " << time << " , ";
+            cout << type;
+        }
+        void sound(string name){
+            cout << name;
+        }
+};
+
+int main(){
+
+    Truck tata;
+    Truck mahindra;
+    highway htata;
+    // tata.sound("burrm burmm");
+    // cout << endl;
+    // mahindra.sound(5, "durrm durmm");
+    htata.sound(5, "durrm durmm");
 
     return 0;
 }

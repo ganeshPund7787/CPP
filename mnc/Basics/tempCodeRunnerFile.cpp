@@ -1,2 +1,4 @@
-
-        star_fol_loop((n-i)-1);
+   void sound(int time,string type){
+            cout << time;
+            cout << type;
+        }
