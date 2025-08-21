@@ -29,7 +29,7 @@ using namespace std;
 int main(){
     vector<int> nums = {3,2,3};
     int count = 0, ans = -1;
-
+ 
     for (int i = 0; i < nums.size(); i++) {
         if (count == 0) {
             ans = nums[i];
